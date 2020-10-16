@@ -56,7 +56,7 @@ Die gültigen Kombinationen für diese Operatoren sind:
 
 *skalar* + *integral*
 
-*integraler* + *skalar*
+*integral* + *skalar*
 
 *arithmetisch* - *arithmetisch*
 
