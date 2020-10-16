@@ -1,5 +1,5 @@
 ---
-title: 'Address-of-Operator: &amp;'
+title: 'Address-of Operator: &amp;'
 description: Der Address-of-Operator in der Programmiersprache C++.
 ms.date: 10/02/2020
 f1_keywords:
@@ -24,19 +24,19 @@ ms.locfileid: "91765283"
 
 ## <a name="remarks"></a>Bemerkungen
 
-Der unäre address-of-Operator ( **`&`** ) übernimmt die Adresse seines Operanden. Der Operand des address-of-Operators kann entweder ein Funktions Kenn Zeichner oder ein l-Wert sein, der ein Objekt angibt, das kein Bitfeld ist.
+Der unäre address-of Operator ( **`&`** ) übernimmt die Adresse seines Operanden. Der Operand des address-of Operators kann entweder ein Funktionskennzeichner oder ein L-Wert sein, der ein Objekt angibt, das kein Bitfeld ist.
 
-Der Address-of-Operator kann nur auf Variablen von grundlegenden, Struktur-, Klassen-oder Union-Typen angewendet werden, die auf Datei Gültigkeits Ebene deklariert sind, oder auf Index Verweise. In diesen Ausdrücken kann ein konstanter Ausdruck, der nicht den Address-of-Operator einschließt, dem address-of-Ausdruck hinzugefügt oder von diesem subtrahiert werden.
+Der address-of Operator kann nur auf Variablen von grundlegenden, Struktur-, Klassen-oder Union-Typen angewendet werden, die auf der Datei Gültigkeits-Ebene deklariert sind, oder auf Index Verweise. In diesen Ausdrücken kann ein konstanter Ausdruck, der nicht den Address-of Operator einschließt, dem address-of Ausdruck hinzugefügt oder von diesem subtrahiert werden.
 
-Bei Anwendung auf Funktionen oder L-Werte ist das Ergebnis des Ausdrucks ein Zeigertyp (ein R-Wert), der vom Typ des Operanden abgeleitet wird. Wenn z. b. der Operand vom Typ ist **`char`** , ist das Ergebnis des Ausdrucks vom Typ Zeiger auf **`char`** . Der Address-of-Operator, der auf-oder-Objekte angewendet wird **`const`** **`volatile`** , wird zu `const type *` oder ausgewertet `volatile type *` , wobei `type` der Typ des ursprünglichen Objekts ist.
+Bei Anwendung auf Funktionen oder L-Werte ist das Ergebnis des Ausdrucks ein Zeigertyp (ein R-Wert), der vom Typ des Operanden abgeleitet wird. Wenn z. B. der Operand vom Typ **`char`** ist, ist das Ergebnis des Ausdrucks vom Typ Zeiger auf **`char`** . Der address-of Operator, der auf **`const`** oder **`volatile`** -Objekte angewendet wird, wird zu `const type *` oder `volatile type *` ausgewertet, wobei `type` der Typ des ursprünglichen Objekts ist.
 
 Die Adresse einer überladenen Funktion kann nur verwendet werden, wenn klar ist, auf welche Version der Funktion verwiesen wird. Weitere Informationen zum Abrufen der Adresse einer bestimmten überladenen Funktion finden Sie unter [Funktions Überladung](function-overloading.md) .
 
-Wenn der Address-of-Operator auf einen qualifizierten Namen angewendet wird, hängt das Ergebnis davon ab, ob der *qualifizierte Name* ein statisches Element angibt. Wenn dies der Fall ist, ist das Ergebnis ein Zeiger auf den Typ, der in der Deklaration des Members angegeben wird. Bei einem Member, der nicht statisch ist, ist das Ergebnis ein Zeiger auf den Element *Namen* der Klasse, die durch *qualified-class-Name*angegeben wird. Weitere Informationen zu *qualified-class-Name*finden Sie unter [Primary Expressions](../cpp/primary-expressions.md).
+Wenn der address-of Operator auf einen qualifizierten Namen angewendet wird, hängt das Ergebnis davon ab, ob der *qualifizierte Name* ein statisches Element angibt. Wenn dies der Fall ist, ist das Ergebnis ein Zeiger auf den Typ, der in der Deklaration des Members angegeben wird. Bei einem Member, der nicht statisch ist, ist das Ergebnis ein Zeiger auf den Element *Namen* der Klasse, die durch *qualified-class-Name* angegeben wird. Weitere Informationen zu *qualified-class-Name* finden Sie unter [Primary Expressions](../cpp/primary-expressions.md).
 
 ## <a name="example-address-of-static-member"></a>Beispiel: Adresse des statischen Members
 
-Das folgende Code Fragment zeigt, wie sich das Ergebnis der Address-of-Operatoren unterscheidet, je nachdem, ob ein Klassenmember statisch ist:
+Das folgende Code Fragment zeigt, wie sich das Ergebnis der address-of Operatoren unterscheidet, je nachdem, ob ein Klassenmember statisch ist:
 
 ```cpp
 // expre_Address_Of_Operator.cpp
@@ -58,7 +58,7 @@ In diesem Beispiel ergibt der Ausdruck `&PTM::fValue` den Typ `float *` anstelle
 
 ## <a name="example-address-of-a-reference-type"></a>Beispiel: Adresse eines Referenz Typs
 
-Die Anwendung des address-of-Operators auf einen Referenztyp führt zum gleichen Ergebnis wie die Anwendung des Operators auf das Objekt, an das der Verweis gebunden ist. Zum Beispiel:
+Die Anwendung des address-of Operators auf einen Referenztyp führt zum gleichen Ergebnis wie die Anwendung des Operators auf das Objekt, an das der Verweis gebunden ist. Zum Beispiel:
 
 ```cpp
 // expre_Address_Of_Operator2.cpp
@@ -81,7 +81,7 @@ int main() {
 
 ## <a name="example-function-address-as-parameter"></a>Beispiel: Funktions Adresse als Parameter
 
-Im folgenden Beispiel wird der address-of-Operator benutzt, um ein Zeigerargument an eine Funktion zu übergeben:
+Im folgenden Beispiel wird der address-of Operator benutzt, um ein Zeigerargument an eine Funktion zu übergeben:
 
 ```cpp
 // expre_Address_Of_Operator3.cpp
