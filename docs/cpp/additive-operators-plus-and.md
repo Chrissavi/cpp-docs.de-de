@@ -32,15 +32,15 @@ expression - expression
 
 Die additiven Operatoren sind:
 
-- Ergänzung**+**( )
+- Addition (+)
 
-- Subtraktion**-**( )
+- Subtraktion (-)
 
 Diese binären Operatoren weisen eine Assoziativität von links nach rechts auf.
 
-Die additiven Operatoren nehmen Operanden der arithmetischen Operatoren oder Zeigertypen. Das Ergebnis des**+** Additionsoperators ( ) ist die Summe der Operanden. Das Ergebnis des Subtraktionsoperators (**-**) ist die Differenz zwischen den Operanden. Wenn einer oder beide der Operanden Zeiger sind, müssen sie Zeiger auf Objekte, nicht auf Funktionen sein. Wenn beide Operanden Zeiger sind, sind die Ergebnisse nicht aussagekräftig, wenn nicht beide Zeiger auf Objekte im selben Array verweisen.
+Die additiven Operatoren nehmen Operanden der arithmetischen Operatoren oder Zeigertypen auf. Das Ergebnis des Additionsoperators (+) ist die Summe der Operanden. Das Ergebnis des Subtraktionsoperators (-) ist die Differenz zwischen den Operanden. Wenn einer oder beide der Operanden Zeiger sind, müssen sie Zeiger auf Objekte sein, nicht auf Funktionen. Wenn beide Operanden Zeiger sind, sind die Ergebnisse nicht aussagekräftig, wenn nicht beide Zeiger auf Objekte im selben Array verweisen.
 
-Additive Operatoren nehmen Operanden von *arithmetischen,* *integralen*und *skalaren* Typen. Diese sind in der folgenden Tabelle definiert.
+Additive Operatoren nehmen Operanden von *arithmetischen,* *integralen*und *skalaren* Typen auf. Diese sind in der folgenden Tabelle definiert.
 
 ### <a name="types-used-with-additive-operators"></a>Mit additiven Operatoren verwendete Typen
 
@@ -52,19 +52,19 @@ Additive Operatoren nehmen Operanden von *arithmetischen,* *integralen*und *skal
 
 Die gültigen Kombinationen für diese Operatoren sind:
 
-*Arithmetische* + *Arithmetik*
+*arithmetisch* + *arithmetisch*
 
-*scalar* + *integral*
+*skalar* + *integral*
 
-*integraler* + *Skalar*
+*integraler* + *skalar*
 
-*Arithmetische* - *Arithmetik*
+*arithmetisch* - *arithmetisch*
 
-*scalar* - *skalar*
+*skalar* - *skalar*
 
 Beachten Sie, dass Addition und Subtraktion keine äquivalenten Vorgänge sind.
 
-Wenn beide Operanden arithmetischer Typ sind, werden die in [Standardkonvertierungen](standard-conversions.md) abgedeckten Konvertierungen auf die Operanden angewendet, und das Ergebnis ist der konvertierte Typ.
+Wenn beide Operanden vom arithmetischen Typ sind, werden die in [Standardkonvertierungen](standard-conversions.md) abgedeckten Konvertierungen auf die Operanden angewendet, und das Ergebnis ist der konvertierte Typ.
 
 ## <a name="example"></a>Beispiel
 
@@ -111,7 +111,7 @@ Obwohl der Ganzzahlwert 1 zu `pIntArray` addiert wird, bedeutet dies nicht "1 zu
 
 Wenn beide Operanden Zeiger sind, ist das Ergebnis der Subtraktion die Differenz (in Arrayelementen) zwischen den Operanden. Der Subtraktionsausdruck liefert ein signiertes integrales Ergebnis des Typs `ptrdiff_t` (definiert in der Standard-Includedatei \<stddef.h>).
 
-Einer der Operanden kann vom ganzzahligen Typ sein, solange er der zweite Operand ist. Das Ergebnis der Subtraktion ist vom selben Datentyp wie der ursprüngliche Zeiger. Der Wert der Subtraktion ist ein Zeiger auf das (*n* - *i*)th Array-Element, wobei *n* das Element ist, auf das der ursprüngliche Zeiger zeigt, und *i* der integrale Wert des zweiten Operandens ist.
+Einer der Operanden kann vom ganzzahligen Typ sein, solange er der zweite Operand ist. Das Ergebnis der Subtraktion ist vom selben Datentyp wie der ursprüngliche Zeiger. Der Wert der Subtraktion ist ein Zeiger auf das (*n* - *i*)-te Array-Element, wobei *n* das Element ist, auf das der ursprüngliche Zeiger zeigt, und *i* der integrale Wert des zweiten Operandens ist.
 
 ## <a name="see-also"></a>Siehe auch
 
