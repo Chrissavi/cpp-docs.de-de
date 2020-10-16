@@ -15,7 +15,7 @@ ms.locfileid: "91503280"
 ---
 # <a name="additional-termination-considerations"></a>Weitere Überlegungen zur Beendigung
 
-Sie können ein C++-Programm mit `exit` , **`return`** oder Beenden `abort` . Mit der Funktion `atexit` können Sie eine Beendigung der Verarbeitung hinzufügen. Diese Funktionen werden in den folgenden Abschnitten beschrieben.
+Sie können ein C++-Programm mit `exit` , **`return`** oder `abort` Beenden. Mit der Funktion `atexit` können Sie eine Beendigung der Verarbeitung hinzufügen. Diese Funktionen werden in den folgenden Abschnitten beschrieben.
 
 ## <a name="see-also"></a>Weitere Informationen
 
